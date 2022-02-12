@@ -1,0 +1,116 @@
+@import url("https:fonts.googleapis.com/css?family=Montserrat");
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --tertiary-color: #cd89f1;
+  --quaternary-color: #eb5ea2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  color: var(--secondary-color);
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Header Styles */
+
+header {
+  padding: 20px 35px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* position: sticky;
+  position: -webkit-sticky; */
+  top: 0;
+  background-image: url(../images/herobg.jpg);
+  background-color: var(--secondary-color);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
+  z-index: 9999;
+}
+
+header h1 {
+  font-weight: 800;
+  margin: 0;
+  font-size: 40px;
+  color: var(--primary-color);
+}
+
+header a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 8px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+}
+
+header nav ul li a:hover {
+  background: var(--tertiary-color);
+  color: var(--primary-color);
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+/* End Header Styles */
+
+/* Hero Styles */
+.hero {
+  background-image: url(../images/herobg.jpg);
+  background-color: var(--secondary-color);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.hero-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 30vh;
+}
+
+.name {
+  flex-grow: 1;
+  margin: 30% auto 0 auto;
+  width: 70%;
+}
+
+.hero p {
+  color: var(--primary-color);
+  margin: 1vh;
+  font-size: 4vw;
+  text-align: center;
+  flex-grow: 1;
+}
+/* End Hero Styles */

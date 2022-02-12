@@ -70,9 +70,9 @@ header nav ul {
 }
 
 header nav ul li a {
-  padding: 8px 15px;
+  padding: 6px 7px;
   font-weight: lighter;
-  font-size: 1.55vw;
+  font-size: 4.5vw;
 }
 
 header nav ul li a:hover {
@@ -96,27 +96,56 @@ header nav ul li a:hover {
   /* box-sizing: border-box; */
 }
 
+.hero .name {
+  /* margin: 0 auto; */
+}
+
+.hero img {
+  width: 77%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero .last-name {
+  margin-top: 0.9vh;
+}
+
 .hero-container {
+  position: relative;
+  top: 20vh;
+}
+
+.hero p {
+  margin-top: 0.9vh;
+  text-align: center;
+  font-size: 7.5vw;
+  font-weight: 100;
+}
+
+/* .hero-container {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 28vh;
-}
+} */
 
-.name {
+/* .name {
   flex-grow: 1;
   margin: 30% auto 0 auto;
   width: 70%;
-}
+} */
 
-.hero p {
+/* .hero p {
   color: var(--primary-color);
   margin: 1vh;
   font-size: 4vw;
   text-align: center;
   flex-grow: 1;
-}
+} */
+
 /* End Hero Styles */
 
 .about img {

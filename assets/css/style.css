@@ -120,5 +120,6 @@ header nav ul li a:hover {
 /* End Hero Styles */
 
 .about img {
+  width: 40vh;
   border-radius: 50%;
 }

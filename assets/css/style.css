@@ -124,6 +124,20 @@ header nav ul li a:hover {
   font-weight: 100;
 }
 
+.hero #arrow {
+  display: block;
+  position: absolute;
+  width: 20%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 90%;
+}
+
+.hero #arrow:hover {
+  width: 20.5%;
+}
+
 /* .hero-container {
   margin: 0 auto;
   display: flex;
@@ -148,7 +162,36 @@ header nav ul li a:hover {
 
 /* End Hero Styles */
 
-.about img {
+/* About Me Styles */
+/* .about img {
   width: 40vh;
   border-radius: 50%;
+} */
+
+/* About Me Styles */
+.about {
+  background: linear-gradient(
+    to right top,
+    #194189 0%,
+    #3b4980 25%,
+    #8738a7 100%
+  );
+  margin: 10px;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.about img {
+  display: block;
+  width: 40vh;
+  border-radius: 50%;
+  /* border: 2px solid var(--secondary-color); */
+  padding: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about .bio {
+  margin: 30px;
+  font-size: 20px;
 }

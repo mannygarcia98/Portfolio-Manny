@@ -192,6 +192,41 @@ header nav ul li a:hover {
 }
 
 .about .bio {
-  margin: 30px;
-  font-size: 20px;
+  margin: 0px;
+  font-size: 25px;
+  text-align: center;
 }
+
+.about .bio h3 {
+  padding-bottom: 9px;
+}
+/* End About Me Styles */
+
+/* My Work Styles */
+.work-runbuddy {
+  height: 90vh;
+  /* background-image: url(../images/runbuddy.png); */
+  background: linear-gradient(
+    to right top,
+    #30ccd8 0%,
+    #45d8ca 25%,
+    #9bd855 100%
+  );
+  background-size: cover;
+  /* background-position: top; */
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 10px;
+}
+.work-runbuddy * {
+  border: 2px solid rgb(209, 21, 21);
+  background-color: #3b4980;
+  margin: 0;
+  padding: 2px;
+}
+
+.work-runbuddy img {
+  height: 40vw;
+}
+/* End My Work Styles */

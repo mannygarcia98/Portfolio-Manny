@@ -48,9 +48,9 @@ header {
 }
 
 header h1 {
-  font-weight: 600;
+  font-weight: 700;
   margin: 0;
-  font-size: 5vh;
+  font-size: calc(3vh + 3vw);
   color: var(--primary-color);
 }
 
@@ -59,9 +59,10 @@ header a {
   color: var(--primary-color);
 }
 
-header nav {
+/* header nav {
   margin: 7px 0;
-}
+  margin: 0;
+} */
 
 header nav ul {
   display: flex;
@@ -74,13 +75,13 @@ header nav ul {
 header nav ul li a {
   padding: 0 7px;
   font-weight: 300;
-  font-size: 5.2vw;
+  font-size: calc(1.8vh + 1.8vw);
 }
 
 header nav ul li a:hover {
   background: var(--tertiary-color);
   color: var(--primary-color);
-  border-radius: 15px;
+  border-radius: 0.6em;
   text-shadow: none;
 }
 
@@ -96,44 +97,57 @@ header nav ul li a:hover {
   width: 100%;
   height: calc(100vh - calc(4vh + 4vw));
   /* box-sizing: border-box; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.hero .name {
-  /* margin: 0 auto; */
-}
-
-.hero img {
+/* .hero img {
   width: 77%;
   height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
+} */
+
+.name-container {
+  margin: 0 5vh;
+  padding-top: 20vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.hero .last-name {
+/* .hero .last-name {
   margin-top: 0.9vh;
-}
+} */
 
-.hero-container {
+/* .hero-name-occupation {
   position: relative;
   top: 20vh;
-}
+} */
 
 .hero p {
-  margin-top: 0.9vh;
+  /* margin-top: 0.9vh; */
   text-align: center;
   font-size: 7.5vw;
   font-weight: 100;
 }
 
-.hero #arrow {
+/* .hero #arrow {
+  width: 20%;
   display: block;
   position: absolute;
-  width: 20%;
   left: 0;
   right: 0;
   margin: auto;
   top: 90%;
+} */
+
+.hero #arrow {
+  width: 18%;
+  display: block;
+  margin: 3vh auto;
 }
 
 .hero #arrow:hover {

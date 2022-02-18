@@ -99,7 +99,7 @@ header nav ul li a:hover {
   /* box-sizing: border-box; */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 /* .hero img {
@@ -134,7 +134,7 @@ header nav ul li a:hover {
   font-weight: 100;
 }
 
-/* .hero #arrow {
+.hero #arrow {
   width: 20%;
   display: block;
   position: absolute;
@@ -142,13 +142,13 @@ header nav ul li a:hover {
   right: 0;
   margin: auto;
   top: 90%;
-} */
+}
 
-.hero #arrow {
+/* .hero #arrow {
   width: 18%;
   display: block;
   margin: 3vh auto;
-}
+} */
 
 .hero #arrow:hover {
   width: 20.5%;

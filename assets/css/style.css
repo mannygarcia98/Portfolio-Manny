@@ -1,4 +1,4 @@
-@import url("https:fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
   --primary-color: #fff;
@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 html,
@@ -26,9 +27,10 @@ body {
 /* Header Styles */
 
 header {
-  height: 50px;
+  /* height: 50px; */
+  height: calc(4vh + 4vw);
   /* padding: 15px 35px; */
-  padding: 0 20px;
+  padding: 0 6px;
   background-color: #000;
   display: flex;
   justify-content: space-between;
@@ -46,9 +48,9 @@ header {
 }
 
 header h1 {
-  font-weight: 800;
+  font-weight: 600;
   margin: 0;
-  font-size: 40px;
+  font-size: 5vh;
   color: var(--primary-color);
 }
 
@@ -70,9 +72,9 @@ header nav ul {
 }
 
 header nav ul li a {
-  padding: 6px 7px;
-  font-weight: lighter;
-  font-size: 4.5vw;
+  padding: 0 7px;
+  font-weight: 300;
+  font-size: 5.2vw;
 }
 
 header nav ul li a:hover {
@@ -92,7 +94,7 @@ header nav ul li a:hover {
   background-attachment: fixed;
   background-position: 80%;
   width: 100%;
-  height: calc(100vh - 50px);
+  height: calc(100vh - calc(4vh + 4vw));
   /* box-sizing: border-box; */
 }
 

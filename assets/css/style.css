@@ -5,13 +5,14 @@
   --secondary-color: #000;
   --tertiary-color: #b466d4;
   --quaternary-color: #e657a1;
+  --headerheight: calc(4vh + 4vw);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 html,
@@ -24,12 +25,25 @@ body {
   background-color: var(--secondary-color);
 }
 
+body h3 {
+  font-size: calc(4vh + 4vw);
+  font-weight: 500;
+  text-align: center;
+  margin: 1vw 1vw;
+}
+
+body h4 {
+  font-size: calc(2vh + 2vw);
+  font-weight: 500;
+  text-align: center;
+  margin: 1vw 1vw;
+}
+
 /* Header Styles */
 
 header {
   /* height: 50px; */
-  height: calc(4vh + 4vw);
-  /* padding: 15px 35px; */
+  height: var(--headerheight);
   padding: 0 6px;
   background-color: #000;
   display: flex;
@@ -45,6 +59,10 @@ header {
   background-attachment: fixed;
   background-position: 80%;
   z-index: 9999;
+}
+
+header > * {
+  padding-top: 1.1vh;
 }
 
 header h1 {
@@ -73,9 +91,9 @@ header nav ul {
 }
 
 header nav ul li a {
-  padding: 0 7px;
+  padding: 0 6px;
   font-weight: 300;
-  font-size: calc(1.8vh + 1.8vw);
+  font-size: calc(2.1vh + 2.1vw);
 }
 
 header nav ul li a:hover {
@@ -84,7 +102,6 @@ header nav ul li a:hover {
   border-radius: 0.6em;
   text-shadow: none;
 }
-
 /* End Header Styles */
 
 /* Hero Styles */
@@ -95,7 +112,7 @@ header nav ul li a:hover {
   background-attachment: fixed;
   background-position: 80%;
   width: 100%;
-  height: calc(100vh - calc(4vh + 4vw));
+  height: calc(100vh - var(--headerheight));
   /* box-sizing: border-box; */
   display: flex;
   flex-direction: column;
@@ -185,7 +202,7 @@ header nav ul li a:hover {
 } */
 
 /* About Me Styles */
-.about {
+/* .about {
   background: linear-gradient(
     to right top,
     #194189 0%,
@@ -195,19 +212,111 @@ header nav ul li a:hover {
   margin: 10px;
   border-radius: 25px;
   padding: 20px;
+} */
+
+.about {
+  padding-top: var(--headerheight);
+}
+
+.about-content-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 10vw;
 }
 
 .about img {
+  width: 40vw;
+  border-radius: 50%;
+  margin: 0 auto;
+  flex-basis: 30vh 30vw;
+  flex-grow: 1;
+}
+
+.about p {
+  flex-basis: 300px;
+  flex-grow: 2;
+  font-size: calc(1.5vh + 1.5vw);
+  text-align: center;
+  padding: 1vh 0;
+}
+
+/* .about img {
   display: block;
   width: 40vh;
   border-radius: 50%;
-  /* border: 2px solid var(--secondary-color); */
   padding: 30px;
   margin-right: auto;
   margin-left: auto;
-}
+} */
 
-.about .bio {
+/* .about .bio {
   margin: 30px;
   font-size: 20px;
+} */
+
+/* End About Styles */
+
+/* Work Styles */
+.primary-project {
+  /* position: relative; */
+  background: linear-gradient(
+    to right top,
+    #194189 0%,
+    #3b4980 25%,
+    #8738a7 100%
+  );
+  /* height: 60vh; */
+  border-radius: 12px;
+  margin: 10px;
 }
+
+.laptop-image {
+  /* margin: -14px -14px -14px -26px; */
+  margin: -2vw -4vw -2vw -7vw;
+}
+
+.primary-project p {
+  font-size: calc(1.5vh + 1.5vw);
+}
+
+.primary-project img {
+  display: block;
+  /* margin: 0 auto; */
+  width: 60vw;
+}
+
+.run-buddy-container {
+  display: flex;
+}
+
+.secondary-projects-container {
+  columns: 2;
+  margin: 10px;
+}
+
+.calculator {
+  /* width: 40vw; */
+  background-image: url(../images/calculator.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+
+.calculator h4 {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  background-position: center;
+  padding: 0.1em 0;
+}
+
+.secondary-project p {
+  opacity: 0%;
+}
+
+/* End Work Styles */
+
+/* Contact Styles */
+/* End Contact Styles */
+
+/* Footer Styles */
+/* End Footer Styles */

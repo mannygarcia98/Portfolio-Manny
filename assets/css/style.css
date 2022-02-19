@@ -12,7 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 html,
@@ -358,40 +358,75 @@ header nav ul li a:hover {
 
 .secondary-projects-container {
   columns: 2;
-  margin: 10px;
+  margin: calc(1vh + 1vw);
+}
+
+.secondary-projects-container > * {
+  min-height: 30vh;
 }
 
 .calculator {
   /* width: 40vw; */
   background-image: url(../images/calculator.jpg);
   background-size: cover;
-  background-position: center;
+  background-position-x: center;
+  background-position-y: top;
   border-radius: 12px;
 }
 
-.calculator h4 {
+.secondary-project h4 {
   background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 12px;
+  /* display: block; */
+  /* border-radius: 12px; */
   background-position: center;
-  padding: 0.1em 0;
+  padding: 0 0;
+  margin: 0;
 }
 
 .secondary-project p {
+  position: relative;
   color: rgba(255, 255, 255, 0);
+  margin-top: 1vh;
+  min-height: 10vh;
+  font-size: calc(1.5vh + 1.5vw);
+  font-weight: 500;
 }
 
 .hover-p:hover {
   color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(87, 86, 86, 0.9);
 }
 
 .secondary-project:hover p {
-  color: rgba(255, 255, 255, 0.9);
+  /* color: rgba(255, 255, 255, 0.9); */
+}
+
+.tribute {
+  background-image: url(../images/thekillerpage.png);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: -5%;
+  border-radius: 12px;
 }
 
 /* End Work Styles */
 
 /* Contact Styles */
+
+.contact-info p {
+  font-weight: 500;
+  font-size: calc(1.5vh + 1.5vw);
+  min-width: auto;
+  text-align: center;
+}
 /* End Contact Styles */
 
 /* Footer Styles */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2vh;
+  margin: 0 1vw;
+}
 /* End Footer Styles */

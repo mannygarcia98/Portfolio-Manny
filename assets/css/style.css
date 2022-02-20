@@ -6,7 +6,7 @@
   --tertiary-color: #ad3ce2;
   --quaternary-color: #e657a1;
   --headerheight: calc(4vh + 4vw);
-  --headerheight-laptop: calc(3vh + 3vw);
+  --headerheight-laptop: calc(2.3vh + 2.3vw);
 }
 
 * {
@@ -55,11 +55,12 @@ header {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  background-image: url(../images/herobg.jpg);
+  /* background-image: url(../images/herobg.jpg); */
   background-color: var(--secondary-color);
+  /* background-color: #1d0529; */
   background-size: cover;
-  background-attachment: fixed;
-  background-position: 100%;
+  /* background-attachment: fixed; */
+  background-position: center;
   z-index: 9999;
 }
 
@@ -112,8 +113,9 @@ header nav ul li a:hover {
   background-image: url(../images/herobg.jpg);
   background-color: var(--secondary-color);
   background-size: cover;
-  background-attachment: fixed;
-  background-position: 100%;
+  /* background-attachment: fixed; */
+  /* background-position-x: 10%; */
+  background-position: center;
   width: 100%;
   height: calc(100vh - var(--headerheight));
   /* box-sizing: border-box; */
@@ -199,7 +201,6 @@ header nav ul li a:hover {
 } */
 
 /* End Hero Styles */
-
 
 /* About Me Styles */
 .about {
@@ -293,8 +294,8 @@ header nav ul li a:hover {
 }
 
 .projects-top {
-  margin-top: 1vh;
-  margin-bottom: 2vh;
+  margin-top: 1.4vh;
+  margin-bottom: 2.5vh;
 }
 
 .run-buddy-description {
@@ -329,7 +330,7 @@ header nav ul li a:hover {
 
 .primary-project img {
   display: block;
-  align-self: center;
+  align-self: flex-end;
   margin: 2vh auto 2vh auto;
   /* margin: 0 1vh; */
   width: 40vw;
@@ -338,6 +339,10 @@ header nav ul li a:hover {
 
 .run-buddy-container {
   display: flex;
+}
+
+.run-buddy-paragraph {
+  font-size: ;
 }
 
 .secondary-projects-container {
@@ -396,12 +401,22 @@ header nav ul li a:hover {
 /* End Work Styles */
 
 /* Contact Styles */
+.contact {
+  padding: 5vh 0;
+}
+
 
 .contact-info p {
   font-weight: 500;
   font-size: calc(1.5vh + 1.5vw);
   min-width: auto;
   text-align: center;
+  line-height: 1.5em;
+}
+
+.contact-info a {
+  text-decoration: underline solid var(--primary-color);
+  color: var(--primary-color);
 }
 /* End Contact Styles */
 
@@ -420,10 +435,13 @@ footer h1 {
 
 .footer-text {
   font-size: calc(1.3vh + 1.3vw);
-} 
+}
 /* End Footer Styles */
 
 @media (min-width: 750px) {
+  .hero #arrow {
+    width: 9%;
+  }
   .about p {
     text-align: left;
     margin-left: 3vw;
@@ -434,51 +452,119 @@ footer h1 {
 @media (min-width: 1024px) {
   /* header styles */
   header {
-  height: var(--headerheight-laptop);
-  padding: 0.5vh 6px;
+    height: var(--headerheight-laptop);
+    padding: 0.1vh 6px;
+  }
+
+ body h3 {
+    font-size: calc(2.7vw + 2.7vw);
   }
   header h1 {
-    font-size: calc(2.2vh + 2.2vw);
+    font-size: calc(1.8vh + 1.8vw);
   }
 
   header nav ul li a {
-    padding: 0 .6vw;
+    padding: 0 1vw;
     font-weight: 300;
-    font-size: calc(1.5vh + 1.5vw);
+    font-size: calc(1.2vh + 1.2vw);
   }
-/* End Header Styles */
+  /* End Header Styles */
 
-/* Hero Styles */
-.hero {
-  height: calc(100vh - var(--headerheight-laptop));
+  /* Hero Styles */
+  .hero {
+    height: calc(100vh - var(--headerheight-laptop));
+  }
+
+  .name-container {
+    padding-top: 25vh;
+  }
+
+  .name {
+    width: 38vw;
+    padding: 0 0.5vw;
+  }
+
+  .hero p {
+    font-size: 5.2vw;
+  }
+
+  .hero #arrow {
+    width: 6%;
+    top: 86vh;
+  }
+  /* End Hero Styles */
+
+  /* About Me Styles */
+  .about {
+    padding-top: var(--headerheight-laptop);
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+  .about p {
+    font-size: calc(1.2vh + 1.2vw);
+  }
+
+  .about img {
+    width: 15vw;
+  }
+
+  /* work styles */
+  .showcase {
+    max-width: 85vw;
+    margin: 0 auto;
+  }
+
+  .primary-project {
+    flex-wrap: nowrap;
+    padding: 2vh 1vh;
+  }
+
+  .run-buddy {
+    font-size: calc(0.7vh + 0.7vw);
+  }
+
+  #run-buddy-header {
+    font-size: calc(2.3vh + 2.3vw);
+    padding-bottom: 0.6vw;
+  }
+
+  #run-buddy-subheading {
+    font-size: calc(2.2vh + 2.2vw);
+  }
+
+  .primary-project img {
+    width: 40vw;
+    margin: 0 1vw;
+    padding-bottom: 3vh;
+  }
+
+  .run-buddy-description {
+    padding-bottom: 2vh;
+  }
+
+  .projects-top {
+    margin: 4vh 0 1.9vh 0;
+  }
+
+  .secondary-project p {
+    font-size: calc(1vh + 1vw);
+    padding: 1vw 2vw;
+  }
+
+  .tribute {
+    background-position-y: 0%;
+  }
+
+  .contact-info p {
+    font-size: calc(1vh + 1vw);
+  }
+
+  footer h1 {
+    font-size: calc(1.6vh + 1.6vw);
+  }
+  
+  .footer-text {
+    font-size: calc(1vh + 1vw);
+  }
 }
 
-.name-container {
-  padding-top: 25vh;
-}
-
-.name {
-  width: 38vw;
-  padding: 0 .5vw;
-}
-
-.hero p {
-  font-size: 5.2vw;
-}
-
-.hero #arrow {
-  width: 6%;
-  top: 86vh;
-}
-/* End Hero Styles */
-
-/* About Me Styles */
-
-
-
-  /* .about p {
-    text-align: left;
-    margin-left: 3vw;
-    font-size: calc(1.5vh + 1.5vw);
-  } */
-}

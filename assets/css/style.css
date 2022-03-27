@@ -173,12 +173,7 @@ header nav ul li a:hover {
   padding-top: var(--headerheight);
 }
 .primary-project {
-  background: linear-gradient(
-    to right top,
-    #06a01a 0%,
-    #2cac0b 25%,
-    #fffb00 100%
-  );
+  background: linear-gradient(to right top, #06a01a 0%, #2cac0b 25%, #fffb00 100%);
   border-radius: 20px;
   margin: calc(0.5vh + 0.5vw);
   overflow: hidden;
@@ -251,7 +246,7 @@ header nav ul li a:hover {
 }
 
 .calculator {
-  background-image: url(../images/calculator.jpg);
+  background-image: url(../images/f1-frenzy-screenshot.png);
   background-size: cover;
   background-position-x: center;
   background-position-y: top;
